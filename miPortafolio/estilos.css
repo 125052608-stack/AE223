@@ -11,7 +11,7 @@ body{
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: black;
+    color: rgb(70, 31, 31);
     background-color: rgb(35, 2, 38);
 
 }
@@ -107,7 +107,7 @@ section h2{
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
-    background-color: black;
+    background-color: rgb(145, 110, 110);
     color: azure;
     text-decoration: none;
     font-size: 16px;
@@ -115,8 +115,8 @@ section h2{
 }
 
 .boton:hover,button:hover{
-    background-color: greenyellow;
-    color:black;
+    background-color: rgb(67, 22, 22);
+    color:rgb(244, 103, 103);
 }
 
 
@@ -177,11 +177,83 @@ section h2{
 }
 
 .proyecto h3{
-   margin-top: 0;
-    font-size: 22px;
+    margin-top: 0;
+    flex-shrink: 22px;
 }
 
 .proyecto a {
     color: blue;
     font-weight: bold;
+}
+/* FORMULARIO */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo{
+    margin-bottom: 20px;
+}
+
+.campo label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input, .campo textArea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(89, 0, 255);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+form button{
+    width: 100%;
+}
+
+/* PARTE DOS
+pie de pagina */
+
+footer{
+    padding: 30px 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+footer p {
+    margin: 5px;
+}
+
+/* diseño responsive */
+
+@media (max-width: 600px){
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px
+    }
+    section {
+        padding: 40px 20px;
+    }
+    .seccion-contenido h2 {
+        font-size: 32px;
+    }
+    .sobre-mi-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor-proyectos{
+        flex-direction: column;
+    }
 }
